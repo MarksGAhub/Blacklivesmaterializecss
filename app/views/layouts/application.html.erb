@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blacklivestwo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+    <header>
+    <!-- The below renders the navbar partial on all pages. -->
+    <%= render 'layouts/header' %>
+    </header>
+
+    <main role="main">
+
+    <%= yield %>
+
+    </main>
+
+    <footer>
+    <!-- The below will render the footer partial on all pages.  -->
+    <%= render 'layouts/footer' %>
+    </footer>
+
+
+</body>
+</html>
+
+
