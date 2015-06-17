@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
+
 # rooting to the controller home
-root to: 'posts#home'
+root to: 'pages#home'
 
 resources :posts
   # The priority is based upon order of creation: first created -> highest priority.
